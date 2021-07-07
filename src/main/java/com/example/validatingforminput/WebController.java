@@ -18,6 +18,7 @@ public class WebController implements WebMvcConfigurer {
     registry.addViewController("/results").setViewName("results");
   }
 
+  // GET,POSTメソッドを"/"にマップ
   @GetMapping("/")
   public String showForm(PersonForm personForm) {
     return "form";
